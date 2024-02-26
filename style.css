@@ -1,0 +1,27 @@
+/**
+#F2CF66
+#BFAB6F
+#A65D03
+#402E19
+#733702
+**/
+
+body{
+    background: url(assets/background.jpg) center/cover no-repeat fixed;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    width: 80%;
+    min-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.inputArea{
+    width: 50%;
+}
+.bookList{
+    width: 50%;
+}

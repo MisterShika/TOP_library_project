@@ -16,12 +16,109 @@ main{
     width: 80%;
     min-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f6f8f3;
+}
+
+h1{
+    font: 3rem/4rem "Cormorant Garamond", serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 .inputArea{
-    width: 50%;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
 }
+.inputArea img{
+    display: block;
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    margin: 0 auto;
+}
+.inputArea form{
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.inputArea form>div{
+    margin: 5px 0;
+}
+.inputArea form>div:last-of-type label{
+    display: inline-block;
+}
+.inputArea form>div:last-of-type input{
+    width: auto;
+}
+.inputArea label{
+    display: block;
+    padding: 2px 0;
+    font: 1.25rem/1.5rem "Cormorant Garamond", serif;
+}
+.inputArea input{
+    width: 100%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #b7b7b7;
+}
+.inputArea #submitButton{
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #999;
+    font: 1.25rem/1.5rem "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+.inputArea #submitButton:active{
+    border: 1px solid darkgray;
+    background-color: lightgray;
+}
+
+
 .bookList{
-    width: 50%;
+    width: 55%;
+    height: 100vh;
+    background: #fff;
+    border-left: 1px solid lightgray;
+    overflow-y: scroll;
+}
+.bookList table{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.bookList th{
+    padding: 5px;
+    font: 1.5rem/2rem "Cormorant Garamond", serif;
+    text-align: left;
+    border-right: 1px solid lightgray;
+    vertical-align: bottom;
+}
+.bookList tr:first-child{
+    border-bottom: 1px solid lightgray;
+}
+.bookList tr:nth-child(even){
+    background: #e7e7e7;
+}
+.bookList td{
+    padding: 7px 5px;
+    font: 1rem/1.25rem "Open Sans", sans-serif;
+    border-right: 1px solid lightgray;
+}
+.bookList td:last-child{
+    border-right: none;
+}
+.bookList a{
+    display: inline-block;
+    padding: 7px 5px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    background: #ff6060;
+}
+.bookList a:active{
+    background: #ff2828;
 }
